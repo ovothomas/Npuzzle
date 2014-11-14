@@ -6,7 +6,7 @@ The game Npuzzle for NativeApp
 MainActivityView
 
 
-SettignsView
+SettingsView
 
 
 
@@ -26,14 +26,17 @@ Bitmap.createScaledBitmap(Bitmap bitmap, int width, int height, booelan filter);
 bitmap: image to scale
 width: desired with of image
 height: desired height of image
-- Use bitmap.createBitmap(Bitmap Bitmap, int x, int y,  int width, int height to crop the image
+- Use bitmap.createBitmap(Bitmap Bitmap, int x, int y,  int width, int height to crop the image:
+Bitmap: image to crop
+x, y: origin for cropped image
+width, height: dimensions for cropped image in pixels
 
 
-EasyView
+EasyView, MediumView ,HardView:
+Associate the number of tiles in each respective difficulty with numbers. This setups up the board in its intiate state
+and helps determine when the board is won.
 
-MediumView 
-
-HardView 
+Imageview(setImageBitmap(), setImageDrawable to change image by moving it psyhically by swapping tiles. 
 
 YouWinView:
 - YouWin extends Activity implements OnClickListener
