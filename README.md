@@ -12,7 +12,7 @@ Will use RelativeLayout to set the PlayButton at desired place on screen.
 
 
 ImageSelection:
-After the user chooses its desired difficulty, the button will trigger it to go the next view. This will view the different kinds of pictures already in the app but also there will be a button which will allow you to add your own pcitures directly form your phone 
+After the user chooses its desired difficulty, the button will trigger it to go the next view. This will view the different kinds of pictures already in the app but also there will be a button which will allow you to add your own pcitures directly from your phone. 
 
 - ListView: Will display a scrollable list of pictures which the user can choose from to continue the game
 - Implement some scrollable list of pictures
