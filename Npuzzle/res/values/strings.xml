@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Npuzzle</string>
+    <string name="Npuzzle">Thomas Stephens</string>
+    <string name="action_settings">Settings</string>
+    <string name="play_button">PLAY</string>
+    <string name="title">Npuzzle</string>
+    <string name="title_activity_display_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_picture_selection">Select Picture</string>
+    <string name="Difficulty">Choose Difficulty</string>
+    <string name="settings_easy">Easy</string>
+    <string name="settings_medium">Medium</string>
+    <string name="settings_hard">Hard</string>
+    <string name="button">Button</string>
+
+</resources>
