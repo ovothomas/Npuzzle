@@ -15,7 +15,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="109dp"
-        android:text="@string/settings_easy" />
+        android:text="@string/settings_easy" 
+    	android:onClick="openGameplayEasy" />
 
     <TextView
         android:id="@+id/textView1"
@@ -34,7 +35,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/button1"
         android:layout_marginTop="34dp"
-        android:text="@string/settings_medium" />
+        android:text="@string/settings_medium" 
+     	android:onClick="openGameplayMedium" />
 
     <Button
         android:id="@+id/button3"
@@ -43,6 +45,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/button2"
         android:layout_marginTop="47dp"
-        android:text="@string/settings_hard" />
+        android:text="@string/settings_hard"
+       	android:onClick="openGameplayHard" />
 
 </RelativeLayout>

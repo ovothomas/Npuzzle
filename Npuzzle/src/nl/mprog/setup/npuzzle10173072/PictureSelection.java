@@ -1,11 +1,13 @@
 package nl.mprog.setup.npuzzle10173072;
 
-import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.GridView;
 
 public class PictureSelection extends ActionBarActivity {
 
@@ -13,6 +15,14 @@ public class PictureSelection extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_picture_selection);
+	
+	
+		//find the grid layout and assign the ImageAdapter
+		//add an onclickListener
+		GridView grid = (GridView) findViewById(R.id.gridview);
+	
+		grid.setAdapter(new ImageAdapter (this));
+		//grid.setOnItemClickListener(this);
 	}
 
 	@Override
@@ -22,13 +32,7 @@ public class PictureSelection extends ActionBarActivity {
 		return true;
 	}
 	
-	/** Called when the user clicks the play button */
-	public void openSettings(View view) {
-	    // open settings view when the button is clicked
-		Intent intent = new Intent(this, DisplaySettings.class);
-		startActivity(intent);
-	}
-		
+
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

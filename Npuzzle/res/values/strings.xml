@@ -14,5 +14,8 @@
     <string name="settings_medium">Medium</string>
     <string name="settings_hard">Hard</string>
     <string name="button">Button</string>
+    <string name="title_activity_gameplay_easy">Gameplay</string>
+    <string name="title_activity_gameplay_medium">Gameplay</string>
+    <string name="title_activity_gameplay_hard">Gameplay</string>
 
 </resources>

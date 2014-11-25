@@ -1857,8 +1857,46 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int ic_launcher=0x7f020033;
+        public static final int icon=0x7f020034;
+        public static final int img_2851=0x7f020035;
+        public static final int img_2944=0x7f020036;
+        public static final int img_2989=0x7f020037;
+        public static final int img_3005=0x7f020038;
+        public static final int img_3012=0x7f020039;
+        public static final int img_3034=0x7f02003a;
+        public static final int img_3047=0x7f02003b;
+        public static final int img_3092=0x7f02003c;
+        public static final int img_3110=0x7f02003d;
+        public static final int img_3113=0x7f02003e;
+        public static final int img_3128=0x7f02003f;
+        public static final int img_3160=0x7f020040;
+        public static final int img_3226=0x7f020041;
+        public static final int img_3228=0x7f020042;
+        public static final int img_3251=0x7f020043;
+        public static final int img_3268=0x7f020044;
+        public static final int img_3275=0x7f020045;
+        public static final int img_3346=0x7f020046;
+        public static final int img_3365=0x7f020047;
+        public static final int img_3374=0x7f020048;
+        public static final int img_3385=0x7f020049;
+        public static final int img_3392=0x7f02004a;
+        public static final int img_3397=0x7f02004b;
+        public static final int img_3398=0x7f02004c;
+        public static final int img_3403=0x7f02004d;
+        public static final int img_3424=0x7f02004e;
+        public static final int img_3432=0x7f02004f;
+        public static final int img_3448=0x7f020050;
+        public static final int img_3452=0x7f020051;
+        public static final int img_3484=0x7f020052;
+        public static final int img_3487=0x7f020053;
+        public static final int img_3494=0x7f020054;
+        public static final int img_3576=0x7f020055;
+        public static final int img_3597=0x7f020056;
+        public static final int img_3599=0x7f020057;
+        public static final int img_3610=0x7f020058;
     }
     public static final class id {
+        public static final int RelativeLayout01=0x7f090055;
         public static final int action_bar=0x7f090042;
         public static final int action_bar_activity_content=0x7f090003;
         public static final int action_bar_container=0x7f090041;
@@ -1872,7 +1910,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09003f;
         public static final int action_mode_bar_stub=0x7f09003e;
         public static final int action_mode_close_button=0x7f090031;
-        public static final int action_settings=0x7f090056;
+        public static final int action_settings=0x7f090058;
         public static final int activity_chooser_view_content=0x7f090032;
         public static final int alignBounds=0x7f09000b;
         public static final int alignMargins=0x7f09000c;
@@ -1889,6 +1927,7 @@ containing a value of this type.
         public static final int clip_horizontal=0x7f090011;
         public static final int clip_vertical=0x7f090012;
         public static final int collapseActionView=0x7f090027;
+        public static final int copynotice=0x7f090057;
         public static final int decor_content_parent=0x7f090040;
         public static final int default_activity_button=0x7f090035;
         public static final int dialog=0x7f09002b;
@@ -1901,7 +1940,7 @@ containing a value of this type.
         public static final int fill=0x7f090014;
         public static final int fill_horizontal=0x7f090015;
         public static final int fill_vertical=0x7f090016;
-        public static final int gridLayout1=0x7f090055;
+        public static final int gridview=0x7f090056;
         public static final int home=0x7f090000;
         public static final int homeAsUp=0x7f090020;
         public static final int horizontal=0x7f090009;
@@ -1997,14 +2036,20 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_display_settings=0x7f030017;
-        public static final int activity_main=0x7f030018;
-        public static final int activity_picture_selection=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int activity_gameplay_easy=0x7f030018;
+        public static final int activity_gameplay_hard=0x7f030019;
+        public static final int activity_gameplay_medium=0x7f03001a;
+        public static final int activity_main=0x7f03001b;
+        public static final int activity_picture_selection=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int display_settings=0x7f0c0000;
-        public static final int main=0x7f0c0001;
-        public static final int picture_selection=0x7f0c0002;
+        public static final int gameplay_easy=0x7f0c0001;
+        public static final int gameplay_hard=0x7f0c0002;
+        public static final int gameplay_medium=0x7f0c0003;
+        public static final int main=0x7f0c0004;
+        public static final int picture_selection=0x7f0c0005;
     }
     public static final class string {
         public static final int Difficulty=0x7f0a0017;
@@ -2072,6 +2117,9 @@ containing a value of this type.
         public static final int settings_medium=0x7f0a0019;
         public static final int title=0x7f0a0013;
         public static final int title_activity_display_settings=0x7f0a0014;
+        public static final int title_activity_gameplay_easy=0x7f0a001c;
+        public static final int title_activity_gameplay_hard=0x7f0a001e;
+        public static final int title_activity_gameplay_medium=0x7f0a001d;
         public static final int title_activity_picture_selection=0x7f0a0016;
     }
     public static final class style {
