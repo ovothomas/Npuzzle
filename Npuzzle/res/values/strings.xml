@@ -13,9 +13,13 @@
     <string name="settings_easy">Easy</string>
     <string name="settings_medium">Medium</string>
     <string name="settings_hard">Hard</string>
+    <string name="shuffle_settings">Shuffle</string>
     <string name="button">Button</string>
     <string name="title_activity_gameplay_easy">Gameplay</string>
     <string name="title_activity_gameplay_medium">Gameplay</string>
     <string name="title_activity_gameplay_hard">Gameplay</string>
+    <string name="title_activity_game_play">Gameplay</string>
+    <string name="title_activity_split_image">SplitImage</string>
+    <string name="title_activity_you_win">YouWin</string>
 
 </resources>

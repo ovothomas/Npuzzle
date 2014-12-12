@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/settingseasy"
+          android:title="@string/settings_easy"/>
+    <item android:id="@+id/settingsmedium"
+          android:title="@string/settings_medium"/>
+    <item android:id="@+id/settingshard"
+          android:title="@string/settings_hard"/>
+    <item android:id="@+id/shuffle"
+        android:title="@string/shuffle_settings"/>
+</menu>

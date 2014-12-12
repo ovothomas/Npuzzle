@@ -58,6 +58,26 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nl.mprog.setup.npuzzle10173072.MainActivity" />
         </activity>
+        <activity
+            android:name=".GamePlay"
+            android:label="@string/title_activity_game_play"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nl.mprog.setup.npuzzle10173072.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SplitImage"
+            android:label="@string/title_activity_split_image" >
+        </activity>
+        <activity
+            android:name=".YouWin"
+            android:label="@string/title_activity_you_win"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nl.mprog.setup.npuzzle10173072.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

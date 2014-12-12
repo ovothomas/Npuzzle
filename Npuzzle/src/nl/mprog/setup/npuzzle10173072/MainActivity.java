@@ -14,9 +14,6 @@ public class MainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		// gridview
-		ImageAdapter adapter = new ImageAdapter(this);
-		// gridview.setAdapter(adapter);
 	}
 	
 	/** Called when the user clicks the play button */
@@ -24,9 +21,6 @@ public class MainActivity extends ActionBarActivity {
 	    // open settings view when the button is clicked
 		Intent intent = new Intent(this, PictureSelection.class);
 		startActivity(intent);
-		
-		
-		
 	}
 
 	@Override

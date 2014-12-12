@@ -60,7 +60,8 @@ public class ImageAdapter extends BaseAdapter {
 	@Override
 	public Object getItem(int position) {
 		// TODO Auto-generated method stub
-		return null;
+		return mImages[position];
+		
 	}
 
 	@Override
@@ -78,8 +79,6 @@ public class ImageAdapter extends BaseAdapter {
 		// that's been passed to us.
 		
 		ImageView imgView;
-
-		
 		if(convertView == null) {
 
 			// create a new view
@@ -94,12 +93,12 @@ public class ImageAdapter extends BaseAdapter {
 		}
 
 		// see if we've stored a resized thumb in cache
-		if(cache[position] == null) {
+		if(cache[position] == null) { 
 		
 			// create a new Bitmap that stores a resized
 			// version of the image we want to display. 
 			BitmapFactory.Options options = new BitmapFactory.Options();
-			options.inSampleSize = 4;
+			options.inSampleSize = 10;
 			Bitmap thumb = BitmapFactory.decodeResource(mContext.getResources(), mImages[position], options);
 
 			// store the resized thumb in a cache so we don't have to re-generate it
@@ -108,17 +107,6 @@ public class ImageAdapter extends BaseAdapter {
 
 		// use the resized image we have in the cache
 		imgView.setImageBitmap(cache[position]);
-
-
-		// We might be tempted to do the below, but this is bad. The
-		// images we've put in the drawable directory are quite large
-		// and need to be scaled down to load all of them in memory to
-		// display on screen. If we just use the raw images (as in the
-		// below code) we would quickly get an OutOfMemory exception,
-		// as the entire image would be loaded in memory and scaled 
-		// down live.
-		//imgView.setImageResource(images[position]);
-
 		return imgView;
 	}
 
