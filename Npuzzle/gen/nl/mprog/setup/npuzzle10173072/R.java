@@ -2085,19 +2085,20 @@ containing a value of this type.
         public static final int button=0x7f0a001c;
         public static final int hello_world=0x7f0a0015;
         public static final int play_button=0x7f0a0012;
+        public static final int resume_button=0x7f0a001d;
         public static final int settings_easy=0x7f0a0018;
         public static final int settings_hard=0x7f0a001a;
         public static final int settings_medium=0x7f0a0019;
         public static final int shuffle_settings=0x7f0a001b;
         public static final int title=0x7f0a0013;
         public static final int title_activity_display_settings=0x7f0a0014;
-        public static final int title_activity_game_play=0x7f0a0020;
-        public static final int title_activity_gameplay_easy=0x7f0a001d;
-        public static final int title_activity_gameplay_hard=0x7f0a001f;
-        public static final int title_activity_gameplay_medium=0x7f0a001e;
+        public static final int title_activity_game_play=0x7f0a0021;
+        public static final int title_activity_gameplay_easy=0x7f0a001e;
+        public static final int title_activity_gameplay_hard=0x7f0a0020;
+        public static final int title_activity_gameplay_medium=0x7f0a001f;
         public static final int title_activity_picture_selection=0x7f0a0016;
-        public static final int title_activity_split_image=0x7f0a0021;
-        public static final int title_activity_you_win=0x7f0a0022;
+        public static final int title_activity_split_image=0x7f0a0022;
+        public static final int title_activity_you_win=0x7f0a0023;
     }
     public static final class style {
         /** 

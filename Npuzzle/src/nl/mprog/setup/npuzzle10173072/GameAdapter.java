@@ -44,7 +44,7 @@ public class GameAdapter extends BaseAdapter {
 	public View getView(int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
 		ImageView imgView = views[position];
-		
+		//imgView.setImageBitmap(mImages[mIds[position]])
 		imgView.setImageBitmap(mImages[position]);
 		//change this later!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		imgView.setTag(mIds[position]);

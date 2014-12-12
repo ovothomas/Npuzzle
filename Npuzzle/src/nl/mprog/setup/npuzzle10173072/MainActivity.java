@@ -1,25 +1,38 @@
 package nl.mprog.setup.npuzzle10173072;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
+	Button resumeButton;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+		//resumeButton = (Button) findViewById(R.id.button2);
+		//SharedPreferences prefs = this.getSharedPreferences("savedInfo", MODE_PRIVATE);
+		//resumeButton.setVisibility(View.VISIBLE);
+		//resumeButton.setVisibility(View.INVISIBLE);
 	}
 	
 	/** Called when the user clicks the play button */
 	public void openSettings(View view) {
 	    // open settings view when the button is clicked
 		Intent intent = new Intent(this, PictureSelection.class);
+		startActivity(intent);
+	}
+	
+	public void openresume(View view) {
+	    // open settings view when the button is clicked
+		Intent intent = new Intent(this, GamePlay.class);
 		startActivity(intent);
 	}
 
