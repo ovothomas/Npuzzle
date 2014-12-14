@@ -1,4 +1,8 @@
 package nl.mprog.setup.npuzzle10173072;
+/*
+ * Thomas Stephens 10173072
+ * N-Puzzle
+ */
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +14,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
-public class PictureSelection extends ActionBarActivity implements OnItemClickListener {
+public class PictureSelectionActivity extends ActionBarActivity implements OnItemClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +36,12 @@ public class PictureSelection extends ActionBarActivity implements OnItemClickLi
 public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
     	
     	// create the Intent to open our ShowImage activity.
-    	Intent i = new Intent(this, GamePlay.class);
+    	Intent i = new Intent(this, GamePlayActivity.class);
    
     	// pass a key:value pair into the 'extra' bundle for
     	// the intent so the activity is made aware which
     	// photo was selected.
     	i.putExtra("imageToDisplay", id);
-
     	// start our activity
     	startActivity(i);
     }

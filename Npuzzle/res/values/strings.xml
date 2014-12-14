@@ -22,5 +22,6 @@
     <string name="title_activity_game_play">Gameplay</string>
     <string name="title_activity_split_image">SplitImage</string>
     <string name="title_activity_you_win">YouWin</string>
+    <string name="title_activity_lose">Lose</string>
 
 </resources>

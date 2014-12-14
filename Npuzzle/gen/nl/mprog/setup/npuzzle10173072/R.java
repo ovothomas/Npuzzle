@@ -1856,11 +1856,11 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020030;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
-        public static final int black=0x7f020033;
+        public static final int blanktile=0x7f020033;
         public static final int ic_launcher=0x7f020034;
         public static final int icon=0x7f020035;
         public static final int img_02=0x7f020036;
-        public static final int img_04=0x7f020037;
+        public static final int img_33=0x7f020037;
     }
     public static final class id {
         public static final int RelativeLayout01=0x7f090056;
@@ -2011,18 +2011,20 @@ containing a value of this type.
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_display_settings=0x7f030017;
         public static final int activity_game_play=0x7f030018;
-        public static final int activity_main=0x7f030019;
-        public static final int activity_picture_selection=0x7f03001a;
-        public static final int activity_split_image=0x7f03001b;
-        public static final int activity_you_win=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int activity_lose=0x7f030019;
+        public static final int activity_main=0x7f03001a;
+        public static final int activity_picture_selection=0x7f03001b;
+        public static final int activity_split_image=0x7f03001c;
+        public static final int activity_you_win=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
         public static final int game_play=0x7f0c0000;
-        public static final int main=0x7f0c0001;
-        public static final int picture_selection=0x7f0c0002;
-        public static final int split_image=0x7f0c0003;
-        public static final int you_win=0x7f0c0004;
+        public static final int lose=0x7f0c0001;
+        public static final int main=0x7f0c0002;
+        public static final int picture_selection=0x7f0c0003;
+        public static final int split_image=0x7f0c0004;
+        public static final int you_win=0x7f0c0005;
     }
     public static final class string {
         public static final int Difficulty=0x7f0a0017;
@@ -2096,6 +2098,7 @@ containing a value of this type.
         public static final int title_activity_gameplay_easy=0x7f0a001e;
         public static final int title_activity_gameplay_hard=0x7f0a0020;
         public static final int title_activity_gameplay_medium=0x7f0a001f;
+        public static final int title_activity_lose=0x7f0a0024;
         public static final int title_activity_picture_selection=0x7f0a0016;
         public static final int title_activity_split_image=0x7f0a0022;
         public static final int title_activity_you_win=0x7f0a0023;

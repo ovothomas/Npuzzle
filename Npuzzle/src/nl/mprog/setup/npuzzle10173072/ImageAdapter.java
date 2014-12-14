@@ -83,7 +83,7 @@ public class ImageAdapter extends BaseAdapter {
 
 			// create a new view
 			imgView = new ImageView(mContext);
-			imgView.setLayoutParams(new GridView.LayoutParams(100,100));
+			imgView.setLayoutParams(new GridView.LayoutParams(150,150));
 
 		} else {
 	

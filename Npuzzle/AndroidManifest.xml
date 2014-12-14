@@ -27,7 +27,7 @@
             android:label="@string/title_activity_display_settings" >
         </activity>
         <activity
-            android:name=".PictureSelection"
+            android:name=".PictureSelectionActivity"
             android:label="@string/title_activity_picture_selection"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -59,7 +59,7 @@
                 android:value="nl.mprog.setup.npuzzle10173072.MainActivity" />
         </activity>
         <activity
-            android:name=".GamePlay"
+            android:name=".GamePlayActivity"
             android:label="@string/title_activity_game_play"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -71,12 +71,16 @@
             android:label="@string/title_activity_split_image" >
         </activity>
         <activity
-            android:name=".YouWin"
+            android:name=".YouWinActivity"
             android:label="@string/title_activity_you_win"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nl.mprog.setup.npuzzle10173072.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Lose"
+            android:label="@string/title_activity_lose" >
         </activity>
     </application>
 

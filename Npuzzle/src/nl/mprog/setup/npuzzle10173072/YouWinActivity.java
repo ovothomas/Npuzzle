@@ -1,4 +1,10 @@
 package nl.mprog.setup.npuzzle10173072;
+/*
+ * Thomas Stephens 10173072
+ * This class opens when the game is won
+ * The image is shown and also the number of moves made
+ * When the image is clicked we go back to the main menu
+ */
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +17,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class YouWin extends ActionBarActivity implements OnClickListener  {
+public class YouWinActivity extends ActionBarActivity implements OnClickListener  {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

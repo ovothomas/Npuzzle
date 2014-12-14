@@ -7,35 +7,36 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements OnClickListener {
 
+	SharedPreferences prefs;
+	Button playButton;
 	Button resumeButton;
+	 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		//resumeButton = (Button) findViewById(R.id.button2);
-		//SharedPreferences prefs = this.getSharedPreferences("savedInfo", MODE_PRIVATE);
-		//resumeButton.setVisibility(View.VISIBLE);
-		//resumeButton.setVisibility(View.INVISIBLE);
+		playButton = (Button) findViewById(R.id.button1);
+		playButton.setOnClickListener (this);
 	}
 	
-	/** Called when the user clicks the play button */
-	public void openSettings(View view) {
-	    // open settings view when the button is clicked
-		Intent intent = new Intent(this, PictureSelection.class);
-		startActivity(intent);
-	}
-	
-	public void openresume(View view) {
-	    // open settings view when the button is clicked
-		Intent intent = new Intent(this, GamePlay.class);
-		startActivity(intent);
-	}
-
+	public void onClick(View view){
+		
+		// Information is given to the button so it can
+		// send it to the next activity
+		switch(view.getId()){
+		case R.id.button1:
+			Intent intent = new Intent(this, PictureSelectionActivity.class);
+			startActivity(intent);
+			break;
+			}	
+		}
+			
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
