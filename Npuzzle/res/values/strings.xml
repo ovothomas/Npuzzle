@@ -23,5 +23,6 @@
     <string name="title_activity_split_image">SplitImage</string>
     <string name="title_activity_you_win">YouWin</string>
     <string name="title_activity_lose">Lose</string>
+    <string name="quit_settings">Quit</string>
 
 </resources>

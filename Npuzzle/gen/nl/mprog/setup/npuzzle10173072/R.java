@@ -1877,7 +1877,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09003f;
         public static final int action_mode_bar_stub=0x7f09003e;
         public static final int action_mode_close_button=0x7f090031;
-        public static final int action_settings=0x7f09005f;
+        public static final int action_settings=0x7f090060;
         public static final int activity_chooser_view_content=0x7f090032;
         public static final int alignBounds=0x7f09000b;
         public static final int alignMargins=0x7f09000c;
@@ -1923,6 +1923,7 @@ containing a value of this type.
         public static final int normal=0x7f09001d;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
+        public static final int quit=0x7f09005f;
         public static final int radio=0x7f09003c;
         public static final int right=0x7f090018;
         public static final int search_badge=0x7f090046;
@@ -2087,6 +2088,7 @@ containing a value of this type.
         public static final int button=0x7f0a001c;
         public static final int hello_world=0x7f0a0015;
         public static final int play_button=0x7f0a0012;
+        public static final int quit_settings=0x7f0a0025;
         public static final int resume_button=0x7f0a001d;
         public static final int settings_easy=0x7f0a0018;
         public static final int settings_hard=0x7f0a001a;

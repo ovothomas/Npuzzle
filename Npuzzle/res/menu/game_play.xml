@@ -7,4 +7,7 @@
           android:title="@string/settings_hard"/>
     <item android:id="@+id/shuffle"
         android:title="@string/shuffle_settings"/>
+    <item android:id="@+id/quit"
+        android:title="@string/quit_settings"/>
+    
 </menu>

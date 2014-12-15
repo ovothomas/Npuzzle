@@ -46,6 +46,7 @@ public class GamePlayActivity extends ActionBarActivity implements OnClickListen
 	int blankTile;
 	Bitmap ovobmp;
 	Bitmap blanksrc;
+	Bitmap newBitmap;
 	int[] ID = new int[25];
 	static ImageView[] views;
 	Bitmap background;
@@ -64,24 +65,22 @@ public class GamePlayActivity extends ActionBarActivity implements OnClickListen
 		// If the game was paused loop through the board and give the
 		// saved ids to the adapter so it can place the images on the
 		// board accordingly.
-		if (extras == null)
-			extras = getIntent().getExtras();
 		SharedPreferences prefs = getSharedPreferences("gameState",
 				MODE_PRIVATE);
 		numberMoves = prefs.getInt("numberMoves", 0);
 		gameDifficulty = prefs.getInt("GameDifficulty", 3);
+		resource = prefs.getInt("imageToDisplay", -1);
 		for (int j = 0; j < gameDifficulty * gameDifficulty; j++) {
 			ID[j] = prefs.getInt("ID" + j, j);
 		}
 		boardSize = gameDifficulty * gameDifficulty;
+		
+		//If images array is null then start a new game
+		//else continue with the old game
 		if (images == null) {
 
 			ImageSplit();
-			grid = (GridView) findViewById(R.id.gridview);
-			grid.setNumColumns(gameDifficulty);
-			final GameAdapterActivity newGame = new GameAdapterActivity(this, images, ID);
-			grid.setAdapter(newGame);
-			grid.setOnItemClickListener(this);
+			
 		} else {
 
 			grid = (GridView) findViewById(R.id.gridview);
@@ -174,7 +173,6 @@ public class GamePlayActivity extends ActionBarActivity implements OnClickListen
 		// no longer need larger image
 		background.recycle();
 
-		
 		// Shows the image for the user to see the solution, before game starts.
 		ImagePreview(newBitmap);
 		grid = (GridView) findViewById(R.id.gridview);
@@ -232,6 +230,12 @@ public class GamePlayActivity extends ActionBarActivity implements OnClickListen
 			numberMoves = 0;
 			grid.invalidateViews();
 			return false;
+		case R.id.quit:
+			numberMoves = 0;
+			images = null;
+			extras = null;
+			finish();
+			return false;
 		}
 
 		return true;
@@ -243,7 +247,6 @@ public class GamePlayActivity extends ActionBarActivity implements OnClickListen
 		SharedPreferences prefs = getSharedPreferences("gameState",
 				MODE_PRIVATE);
 		SharedPreferences.Editor editor = prefs.edit();
-
 		numberMoves = 0;
 		gameDifficulty = j;
 		editor.putInt("GameDifficulty", j);
@@ -255,10 +258,8 @@ public class GamePlayActivity extends ActionBarActivity implements OnClickListen
 			long id) {
 		// This loop searches the position of the blanktile everytime there is a
 		// swap. When the equation is true the game has the position of the
-		// blanktile
-		// because of the ID tag I gave it. Then we can swap according to the
-		// rules of
-		// the game.
+		// blanktile because of the ID tag I gave it. Then we can swap according to the
+		// rules of the game.
 		for (int x = 0; x < boardSize; x++) {
 			if ((int) grid.getChildAt(x).getTag() == boardSize - 1) {
 				blankpos1 = x;
@@ -266,23 +267,20 @@ public class GamePlayActivity extends ActionBarActivity implements OnClickListen
 		}
 		click1 = position;
 		if (position - gameDifficulty == blankpos1) {
-
+			
 			Swap();
 			checkWin();
 		}
-
 		else if (position + gameDifficulty == blankpos1) {
 
 			Swap();
 			checkWin();
 		}
-
 		else if (position == blankpos1 + 1 && position % gameDifficulty != 0) {
 
 			Swap();
 			checkWin();
 		}
-
 		else if (position == blankpos1 - 1
 				&& position % gameDifficulty != gameDifficulty - 1) {
 			Swap();
@@ -357,7 +355,7 @@ public class GamePlayActivity extends ActionBarActivity implements OnClickListen
 		SharedPreferences.Editor editor = prefs.edit();
 		editor.clear();
 		editor.putInt("GameDifficulty", gameDifficulty);
-		editor.putInt("Resource", resource);
+		editor.putInt("imageToDisplay", resource);
 		editor.putInt("Moves", numberMoves);
 		editor.putBoolean("gameIsActive", true);
 		for (int k = 0; k < gameDifficulty * gameDifficulty; k++) {
@@ -372,13 +370,14 @@ public class GamePlayActivity extends ActionBarActivity implements OnClickListen
 	 * the game when the state is resumed.
 	 */
 	@Override
+	
 	public void onResume() {
 		super.onResume();
 		SharedPreferences prefs = this.getSharedPreferences("gameState",
 				MODE_PRIVATE);
 		gameDifficulty = prefs.getInt("GameDifficulty", 3);
 		numberMoves = prefs.getInt("Moves", 0);
-		resource = prefs.getInt("Resource", -1);
+		resource = prefs.getInt("imageToDisplay", -1);
 		for (int j = 0; j < gameDifficulty * gameDifficulty; j++) {
 			ID[j] = prefs.getInt("ID" + j, j);
 			grid.invalidateViews();

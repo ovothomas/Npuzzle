@@ -14,7 +14,6 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 
 	SharedPreferences prefs;
 	Button playButton;
-	Button resumeButton;
 	 
 	
 	@Override

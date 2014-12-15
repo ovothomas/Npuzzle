@@ -367,7 +367,7 @@ int id action_menu_presenter 0x7f090006
 int id action_mode_bar 0x7f09003f
 int id action_mode_bar_stub 0x7f09003e
 int id action_mode_close_button 0x7f090031
-int id action_settings 0x7f09005f
+int id action_settings 0x7f090060
 int id activity_chooser_view_content 0x7f090032
 int id alignBounds 0x7f09000b
 int id alignMargins 0x7f09000c
@@ -413,6 +413,7 @@ int id none 0x7f090021
 int id normal 0x7f09001d
 int id progress_circular 0x7f090007
 int id progress_horizontal 0x7f090008
+int id quit 0x7f09005f
 int id radio 0x7f09003c
 int id right 0x7f090018
 int id search_badge 0x7f090046
@@ -509,6 +510,7 @@ int string app_name 0x7f0a000f
 int string button 0x7f0a001c
 int string hello_world 0x7f0a0015
 int string play_button 0x7f0a0012
+int string quit_settings 0x7f0a0025
 int string resume_button 0x7f0a001d
 int string settings_easy 0x7f0a0018
 int string settings_hard 0x7f0a001a
